@@ -68,7 +68,7 @@ def ch_in_prog(arg):
         cof = randint(0, len(numbers) - 1)
         ch = numbers.pop(cof)
         numbers.insert(cof, '..')
-        print('Question: ', *numbers)
+        print('Question:', *numbers)
         answer = input('Your answer: ')
         if answer.strip() == str(ch):
             j += 1
