@@ -82,7 +82,7 @@ def ch_in_prog(arg):
 
 
 def ch_prime(arg):
-    print('Answer "yes" if given number is prime. Otherwise answer "no"')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     j = 0
     while j < 3:
         ch = randint(0, 50)
