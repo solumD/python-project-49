@@ -21,7 +21,7 @@ def start_round(arg):
         answer = input('Your answer: ')
         if answer.strip() == str(ch):
             j += 1
-            print ('Correct!')
+            print('Correct!')
         else:
             j = 3
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{ch}'.")
@@ -107,5 +107,5 @@ def ch_prime(arg):
             print(f"'{answer}' is wrong answer ;(. Correct answer was 'yes'.")
             print(f"Let's try again, {arg}!")
             j = 3
-            return 0 
+            return 0
     return 1

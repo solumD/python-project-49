@@ -36,6 +36,7 @@ def start_round(arg):
             return 0
     return 1
 
+
 def goodbye(arg):
     return print(f'Congratulations, {arg}!')
 

@@ -7,5 +7,6 @@ def welcome_user():
     print(f'Hello, {name}!')
     return name
 
+
 def goodbye(arg):
     return print(f'Congratulations, {arg}!')
