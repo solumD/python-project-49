@@ -10,3 +10,6 @@ https://asciinema.org/a/QL8WmkdsJlBe7A7nCuvr5gdkD
 
 brain-gcd demonstration:
 https://asciinema.org/a/LpMXv2iBIsXylbcE54GCslMpu
+
+brain-progression demonstration:
+https://asciinema.org/a/k5wbaOzCLnTBSxZ6D2lW9xePM

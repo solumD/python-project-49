@@ -46,5 +46,27 @@ def greatest_divisor():
             print('Correct!')
         else:
             j = 0
-            print(
-                f"'{answer}' is wrong answer ;(. Correct answer was '{ch}'.")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{ch}'.")
+
+
+def ch_in_prog():
+    print('What number is missing in the progression?')
+    j = 0
+    while j < 3:
+        ch1 = randint(0, 10)
+        ch2 = randint(50, 60)
+        sh = randint(5, 10)
+        numbers = list()
+        for i in range(ch1, ch2, sh):
+            numbers.append(i)
+        cof = randint(0, len(numbers) - 1)
+        ch = numbers.pop(cof)
+        numbers.insert(cof, '..')
+        print('Question: ', *numbers)
+        answer = input('Your answer: ')
+        if answer.strip() == str(ch):
+            j += 1
+            print('Correct!')
+        else:
+            j = 0
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{ch}'.")
