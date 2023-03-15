@@ -86,26 +86,31 @@ def ch_prime(arg):
     j = 0
     while j < 3:
         ch = randint(0, 50)
-        k = 0
-        for i in range(2, ch // 2 + 1):
-            if ch % i == 0:
-                k = k + 1
-        print(f'Question: {ch}')
+        li = is_prime(ch)
         answer = input('Your answer: ')
-        if k <= 0 and answer == 'yes':
+        if li == 0 and answer == 'yes':
             print('Correct!')
             j += 1
-        if k > 0 and answer == 'no':
+        if li > 0 and answer == 'no':
             print('Correct!')
             j += 1
-        if k > 0 and answer != 'no':
-            print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'.")
-            print(f"Let's try again, {arg}!")
+        if li > 0 and answer != 'no':
+            print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'.\n"
+                  f"Let's try again, {arg}!", sep='')
             j = 3
             return 0
-        if k <= 0 and answer != 'yes':
-            print(f"'{answer}' is wrong answer ;(. Correct answer was 'yes'.")
-            print(f"Let's try again, {arg}!")
+        if li == 0 and answer != 'yes':
+            print(f"'{answer}' is wrong answer ;(. Correct answer was 'yes'.\n"
+                  f"Let's try again, {arg}!", sep='')
             j = 3
             return 0
     return 1
+
+
+def is_prime(num):
+    k = 0
+    for i in range(2, num // 2 + 1):
+        if num % i == 0:
+            k = k + 1
+    print(f'Question: {num}')
+    return k
