@@ -7,3 +7,6 @@ https://asciinema.org/a/x68fLiS7FD3hqreRtxRojWBX5
 
 brain-calc demonstration:
 https://asciinema.org/a/QL8WmkdsJlBe7A7nCuvr5gdkD
+
+brain-gcd demonstration:
+https://asciinema.org/a/LpMXv2iBIsXylbcE54GCslMpu
