@@ -13,3 +13,6 @@ https://asciinema.org/a/LpMXv2iBIsXylbcE54GCslMpu
 
 brain-progression demonstration:
 https://asciinema.org/a/k5wbaOzCLnTBSxZ6D2lW9xePM
+
+brain-prime demonstration:
+https://asciinema.org/a/cePCXYU5V9q08h2uWUfJaYLMq

@@ -70,3 +70,28 @@ def ch_in_prog():
         else:
             j = 0
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{ch}'.")
+
+
+def ch_prime():
+    print('Answer "yes" if given number is prime. Otherwise answer "no"')
+    j = 0
+    while j < 3:
+        ch = randint(0, 50)
+        k = 0
+        for i in range(2, ch // 2 + 1):
+            if ch % i == 0:
+                k = k + 1
+        print(f'Question: {ch}')
+        answer = input('Your answer: ')
+        if k <= 0 and answer == 'yes':
+            print('Correct!')
+            j += 1
+        if k > 0 and answer == 'no':
+            print('Correct!')
+            j += 1
+        if k > 0 and answer != 'no':
+            print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'.")
+            j = 0
+        if k <= 0 and answer != 'yes':
+            print(f"'{answer}' is wrong answer ;(. Correct answer was 'yes'.")
+            j = 0
