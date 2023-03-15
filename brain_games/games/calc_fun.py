@@ -2,7 +2,7 @@
 from random import randint, choice
 
 
-def start_round():
+def start_round(arg):
     print('What is the result of the expression?')
     j = 0
     while j < 3:
@@ -23,11 +23,14 @@ def start_round():
             j += 1
             print ('Correct!')
         else:
-            j = 0
+            j = 3
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{ch}'.")
+            print(f"Let's try again, {arg}!")
+            return 0
+    return 1
 
 
-def greatest_divisor():
+def greatest_divisor(arg):
     print('Find the greatest common divisor of given numbers.')
     j = 0
     while j < 3:
@@ -45,11 +48,14 @@ def greatest_divisor():
             j += 1
             print('Correct!')
         else:
-            j = 0
+            j = 3
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{ch}'.")
+            print(f"Let's try again, {arg}!")
+            return 0
+    return 1
 
 
-def ch_in_prog():
+def ch_in_prog(arg):
     print('What number is missing in the progression?')
     j = 0
     while j < 3:
@@ -68,11 +74,14 @@ def ch_in_prog():
             j += 1
             print('Correct!')
         else:
-            j = 0
+            j = 3
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{ch}'.")
+            print(f"Let's try again, {arg}!")
+            return 0
+    return 1
 
 
-def ch_prime():
+def ch_prime(arg):
     print('Answer "yes" if given number is prime. Otherwise answer "no"')
     j = 0
     while j < 3:
@@ -91,7 +100,12 @@ def ch_prime():
             j += 1
         if k > 0 and answer != 'no':
             print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'.")
-            j = 0
+            print(f"Let's try again, {arg}!")
+            j = 3
+            return 0
         if k <= 0 and answer != 'yes':
             print(f"'{answer}' is wrong answer ;(. Correct answer was 'yes'.")
-            j = 0
+            print(f"Let's try again, {arg}!")
+            j = 3
+            return 0 
+    return 1

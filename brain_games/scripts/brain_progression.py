@@ -7,8 +7,8 @@ from ..games.calc_fun import ch_in_prog
 def main():
     print('Welcome to the Brain Games!')
     n = welcome_user()
-    ch_in_prog()
-    goodbye(n)
+    if ch_in_prog(n) == 1:
+        goodbye(n)
 
 
 

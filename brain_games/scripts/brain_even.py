@@ -2,11 +2,12 @@
 from ..cli import welcome_user
 from random import randint
 
+
 def main():
     print('Welcome to the Brain Games!')
     n = welcome_user()
-    start_round(n)
-    goodbye(n)
+    if start_round(n) == 1:
+        goodbye(n)
 
 
 def start_round(arg):
@@ -26,12 +27,14 @@ def start_round(arg):
         if diff == 1 and answer != 'no':
             print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'.")
             print(f"Let's try again, {arg}!")
-            j = 0
+            j = 3
+            return 0
         if diff == 0 and answer != 'yes':
             print(f"'{answer}' is wrong answer ;(. Correct answer was 'yes'.")
             print(f"Let's try again, {arg}!")
-            j = 0
-
+            j = 3
+            return 0
+    return 1
 
 def goodbye(arg):
     return print(f'Congratulations, {arg}!')

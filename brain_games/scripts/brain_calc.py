@@ -7,8 +7,8 @@ from ..games.calc_fun import start_round
 def main():
     print('Welcome to the Brain Games!')
     n = welcome_user()
-    start_round()
-    goodbye(n)
+    if start_round(n) == 1:
+        goodbye(n)
 
 
 
